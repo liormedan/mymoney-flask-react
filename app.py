@@ -68,7 +68,7 @@ def authorize():
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('frontend/budget_dashboard.html')
 
 @app.route('/login')
 def login():
@@ -83,7 +83,6 @@ def signup():
         return redirect(url_for('dashboard'))
     else:
         return render_template('signup.html')
-
 
 @app.route('/reset-password')
 def reset_password():
@@ -115,12 +114,9 @@ def logout():
 @auth_required
 def dashboard():
 
-    return render_template('dashboard.html')
+    return render_template('frontend/dashboard.html')
 
-
-
-
-
+# Additional routes for backend functionality can be added here
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)  # Run on port 5000
