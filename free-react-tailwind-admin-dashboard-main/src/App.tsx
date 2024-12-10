@@ -38,7 +38,7 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="לוח בקרה | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="לוח בקרה | MyMoney - אפליקציית ניהול תקציב אישי" />
               <ECommerce />
             </>
           }
@@ -47,7 +47,7 @@ function App() {
           path="/calendar"
           element={
             <>
-              <PageTitle title="לוח שנה | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="לוח שנה | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Calendar />
             </>
           }
@@ -56,7 +56,7 @@ function App() {
           path="/profile"
           element={
             <>
-              <PageTitle title="פרופיל | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="פרופיל | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Profile />
             </>
           }
@@ -65,7 +65,7 @@ function App() {
           path="/forms/form-elements"
           element={
             <>
-              <PageTitle title="אלמנטי טופס | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="אלמנטי טופס | MyMoney - אפליקציית ניהול תקציב אישי" />
               <FormElements />
             </>
           }
@@ -74,7 +74,7 @@ function App() {
           path="/forms/form-layout"
           element={
             <>
-              <PageTitle title="עיצוב טופס | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="עיצוב טופס | MyMoney - אפליקציית ניהול תקציב אישי" />
               <FormLayout />
             </>
           }
@@ -83,7 +83,7 @@ function App() {
           path="/tables"
           element={
             <>
-              <PageTitle title="טבלאות | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="טבלאות | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Tables />
             </>
           }
@@ -92,7 +92,7 @@ function App() {
           path="/settings"
           element={
             <>
-              <PageTitle title="הגדרות | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="הגדרות | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Settings />
             </>
           }
@@ -101,7 +101,7 @@ function App() {
           path="/chart"
           element={
             <>
-              <PageTitle title="תרשים בסיסי | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="תרשים בסיסי | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Chart />
             </>
           }
@@ -110,7 +110,7 @@ function App() {
           path="/ui/alerts"
           element={
             <>
-              <PageTitle title="התראות | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="התראות | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Alerts />
             </>
           }
@@ -119,7 +119,7 @@ function App() {
           path="/ui/buttons"
           element={
             <>
-              <PageTitle title="כפתורים | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="כפתורים | MyMoney - אפליקציית ניהול תקציב אישי" />
               <Buttons />
             </>
           }
@@ -128,7 +128,7 @@ function App() {
           path="/auth/signin"
           element={
             <>
-              <PageTitle title="כניסה | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="כניסה | MyMoney - אפליקציית ניהול תקציב אישי" />
               <SignIn />
             </>
           }
@@ -137,7 +137,7 @@ function App() {
           path="/auth/signup"
           element={
             <>
-              <PageTitle title="רישום | TailAdmin - תבנית דשבורד מנהלים בסגנון Tailwind CSS" />
+              <PageTitle title="רישום | MyMoney - אפליקציית ניהול תקציב אישי" />
               <SignUp />
             </>
           }

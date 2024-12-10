@@ -14,6 +14,17 @@ import SelectGroupTwo from '../../components/Forms/SelectGroup/SelectGroupTwo';
 import MultiSelect from '../../components/Forms/MultiSelect';
 
 const FormElements = () => {
+  const [date, setDate] = useState('');
+  const [category, setCategory] = useState('');
+  const [amount, setAmount] = useState('');
+  const [description, setDescription] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // כאן ניתן להוסיף את הלוגיקה להוספת הוצאה
+    console.log({ date, category, amount, description });
+  };
+
   return (
     <>
       <Breadcrumb pageName="Form Elements" />
@@ -194,6 +205,58 @@ const FormElements = () => {
             <div className="flex flex-col gap-5.5 p-6.5">
               <SelectGroupTwo />
               <MultiSelect id="multiSelect" />
+            </div>
+          </div>
+
+          {/* <!-- Expense form --> */}
+          <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+            <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
+              <h3 className="font-medium text-black dark:text-white">
+                Expense form
+              </h3>
+            </div>
+            <div className="flex flex-col gap-5.5 p-6.5">
+              <form onSubmit={handleSubmit} className="p-4">
+                <div>
+                  <label htmlFor="date">תאריך:</label>
+                  <input
+                    type="date"
+                    id="date"
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="category">קטגוריה:</label>
+                  <input
+                    type="text"
+                    id="category"
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="amount">סכום:</label>
+                  <input
+                    type="number"
+                    id="amount"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="description">תיאור:</label>
+                  <textarea
+                    id="description"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                  />
+                </div>
+                <button type="submit">הוסף הוצאה</button>
+              </form>
             </div>
           </div>
         </div>
